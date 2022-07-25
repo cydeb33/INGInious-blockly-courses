@@ -1,1 +1,57 @@
-
+accessible: true
+name: Blockly course
+description: This is a Blockly course based on INGInious section.
+admins: []
+tutors: []
+groups_student_choice: false
+allow_unregister: true
+allow_preview: false
+registration: true
+registration_password: null
+registration_ac: null
+registration_ac_list: []
+is_lti: false
+lti_url: ''
+lti_keys: {}
+lti_send_back_grade: false
+task_dispenser: toc
+dispenser_data:
+-   config:
+        closed: false
+    id: maze
+    rank: 0
+    tasks_list:
+        01_maze: 0
+        02_maze: 1
+        03_maze: 2
+        04_maze: 3
+        05_maze: 4
+        06_maze: 5
+        07_maze: 6
+        08_maze: 7
+        09_maze: 8
+        10_maze: 9
+        11_maze: 10
+        12_maze: 11
+        13_maze: 12
+        14_maze: 13
+        15_maze: 14
+        16_maze: 15
+        17_maze: 16
+        18_maze: 17
+    title: Maze
+-   config:
+        closed: false
+    id: artist
+    rank: 1
+    tasks_list:
+        Artist_1: 0
+        Artist_2: 1
+        Artist_3: 2
+        Artist_4: 3
+        Artist_5: 4
+        Artist_6: 5
+        Artist_7: 6
+        Artist_8: 7
+        Artist_9: 8
+    title: Artist

@@ -1,0 +1,92 @@
+accessible: true
+author: Celine Deknop
+categories: []
+contact_url: ''
+context: Complète les lignes vertes. Les lignes ont 250 pixels de long et sont à 15
+    pixels l’une de l’autre.
+environment_id: default
+environment_parameters:
+    limits:
+        time: '30'
+        hard_time: ''
+        memory: '100'
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Exercice 8
+network_grading: false
+order: 0
+problems:
+    code:
+        type: blockly
+        blocks_files:
+        - blocks.js
+        options:
+            media: /plugins/blockly/static/blockly/media/
+            sounds: true
+            css: true
+            toolboxPosition: start
+            scrollbars: true
+            visual:
+                position: left
+            speed: '60'
+            oneBasedIndex: true
+            trashcan: true
+            maxBlocks: '45'
+        files:
+        - ../$common/turtle.js
+        - ../$common/turtle_interpreter.js
+        name: ''
+        toolbox: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml">
+              <variables></variables>
+              <category name="mouvement" colour="150">
+              <variables></variables>
+              <block type="turtle_move">
+                <field name="DIR">moveForward</field>
+                <value name="VALUE">
+                  <block type="math_number">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+              </block>
+              <block type="turtle_turn_internal">
+                <field name="DIR">turnRight</field>
+                <field name="VALUE">90</field>
+              </block>
+              <block type="turtle_turn_internal">
+                <field name="DIR">turnLeft</field>
+                <field name="VALUE">90</field>
+              </block>
+            </category>
+               <category name="couleur" colour="0">
+              <variables></variables>
+              <block type="turtle_colour">
+                <value name="COLOUR">
+                  <block type="colour_random"></block>
+                </value>
+              </block>
+              <block type="turtle_colour_internal">
+                <field name="COLOUR">#228b22</field>
+              </block>
+            </category>
+              <category name="boucle" colour="120">
+              <variables></variables>
+              <block type="controls_repeat">
+                <field name="TIMES">???</field>
+              </block>
+            </category>
+            </xml>
+        workspace: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml">
+              <variables></variables>
+            </xml>
+        header: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
