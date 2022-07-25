@@ -44,7 +44,7 @@ The link to the original repository is given as well as some informations on the
 | :---- | ------------------------------------- |
 | Link | https://github.com/UCL-INGI/Blockly_Section_Exercices |
 | Language | French |
-| Description | Ceci est un cours Blockly bas� sur le syst�me de section d'INGInious. |
+| Description | Ceci est un cours Blockly basé sur le système de section d'INGInious. |
 | License | GPL 3 |
 | Maintainer | UCLouvain - INGI |
 | Authors | Ludovic Taffin |
