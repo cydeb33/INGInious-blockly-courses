@@ -6,17 +6,8 @@ The link to the original repository is given as well as some informations on the
 
 | Name | Les bio-informaticiens mènent l'enquête ! Blockly - PRIMM |
 | :---- | ------------------------------------- |
-| Link | https://github.com/cydeb33/memoire-blockly/tree/main/blockly-exercices |
+| Link | https://github.com/cydeb33/memoire-blockly/tree/main/blockly-exercices https://inginious.org/course/Memoire_Debognie_blockly |
 | Language | Français |
-| Description | Ce cours introduit une série de concepts informatiques au travers d'une petite enquête scientifique. Les outils utilisés sont : Blockly et la méthodologie PRIMM. |
-| License | GPL 3 |
-| Maintainer | UCLouvain - INGI |
-| Authors | Cyrille Debongnie |
-
-| Name | Les bio-informaticiens mènent l'enquête ! Blockly - PRIMM |
-| :---- | ------------------------------------- |
-| Link | https://github.com/cydeb33/memoire-blockly |
-| Language | French |
 | Description | Ce cours introduit une série de concepts informatiques au travers d'une petite enquête scientifique. Les outils utilisés sont : Blockly et la méthodologie PRIMM. |
 | License | GPL 3 |
 | Maintainer | UCLouvain - INGI |
@@ -24,7 +15,7 @@ The link to the original repository is given as well as some informations on the
 
 | Name | Algorithmes et recettes de cuisine |
 | :---- | ------------------------------------- |
-| Link | https://github.com/lin3out/cuisine-algorithmique |
+| Link | https://github.com/lin3out/cuisine-algorithmique https://inginious.org/course/primaire |
 | Language | French |
 | Description | Mémoire didactique de l'informatique - algorithme en cuisinant |
 | License | GPL 3 |
@@ -33,7 +24,7 @@ The link to the original repository is given as well as some informations on the
 
 | Name | [Introduction IA] Les réseaux de neurones |
 | :---- | ------------------------------------- |
-| Link | https://github.com/loan181/INGInious_memoire |
+| Link | https://github.com/loan181/INGInious_memoire https://inginious.org/course/reseaux-neurones |
 | Language | French |
 | Description | Présentation du concept d'intelligence artificielle des "réseaux neuronaux". |
 | License | GPL 3 |
@@ -42,7 +33,7 @@ The link to the original repository is given as well as some informations on the
 
 | Name | [Blockly] Exercices OpenWeek |
 | :---- | ------------------------------------- |
-| Link | https://github.com/OpenWeek/openweek-blockly |
+| Link | https://github.com/OpenWeek/openweek-blockly https://inginious.org/course/blockly-openweek |
 | Language | French |
 | Description | TODO |
 | License | GPL 3 |
