@@ -34,3 +34,13 @@ The links to the original github repository and the INGInious course are given, 
 | License | GPL 3.0 |
 | Maintainer | UCLouvain - INGI
 | Authors | Ilias Boutchichi, Guillaume Bellon, Sophie Schorochoff, Naitali Brandon, Colin Evrard, François Duchêne, Damien Raquet, Olivier Martin, Robin Descamps, François Michel
+
+| Name | Les bio-informaticiens mènent l'enquête ! Blockly - PRIMM     |
+| :---- | ------------------------------------- |
+| Github link | https://github.com/cydeb33/memoire-blockly |
+| INGInious course link |  https://inginious.org/course/Memoire_Debognie_blockly |
+| Language | French |
+| Description | Ce cours introduit une série de concepts informatiques au travers d'une petite enquête scientifique. Les outils utilisés sont : Blockly et la méthodologie PRIMM. |
+| License | GPL 3.0 |
+| Maintainer | UCLouvain - INGI
+| Authors | Cyrille Debongnie
