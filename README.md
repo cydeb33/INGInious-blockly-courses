@@ -33,4 +33,4 @@ The links to the original github repository and the INGInious course are given, 
 | Description | TODO |
 | License | GPL 3.0 |
 | Maintainer | UCLouvain - INGI
-| Authors | TODO
+| Authors | Ilias Boutchichi, Guillaume Bellon, Sophie Schorochoff, Naitali Brandon, Colin Evrard, François Duchêne, Damien Raquet, Olivier Martin, Robin Descamps, François Michel
