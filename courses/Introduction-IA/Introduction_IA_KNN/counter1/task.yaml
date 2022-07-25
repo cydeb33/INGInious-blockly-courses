@@ -1,0 +1,81 @@
+accessible: true
+author: ''
+categories: []
+context: |-
+    Fait passer le compteur des *iris-virginica* à 1 dans le cas ci-dessous.
+
+    Pour cela tu peux utiliser le bloc
+
+    .. image:: $common/img/block/counterInc.svg
+
+    Chaque cas est représenté par une image, leur légende est la suivante :
+
+    =========================================  ==============  ===============
+    *Iris*                                     Description      Icone/Marqueur
+    =========================================  ==============  ===============
+    *iris* inconnue (à classifier/déterminer)  Losange gris    .. image:: $common/img/dark_diamond.svg
+    *iris-setosa*                              Cercle bleu     .. image:: $common/img/blue_circle.svg
+    *iris-versicolor*                          Triangle rouge  .. image:: $common/img/red_triangle.svg
+    *iris-virginica*                           Carré vert      .. image:: $common/img/green_square.svg
+    =========================================  ==============  ===============
+environment: default
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    time: '30'
+    memory: '100'
+name: Compteur 1
+network_grading: false
+problems:
+    tuto1:
+        options:
+            toolboxPosition: start
+            visual:
+                position: left
+            css: true
+            zoom:
+                controls: true
+                minScale: 0.3
+                maxScale: 3.0
+                startScale: 1.0
+                scaleSpeed: 1.2
+                wheel: false
+            grid:
+                snap: true
+                spacing: 20
+                length: 3
+                colour: '#ccc'
+            scrollbars: true
+            speed: '60'
+            oneBasedIndex: true
+            maxBlocks: '2'
+            media: /plugins/blockly/static/blockly/media/
+        blocks_files:
+        - ../$common/blocklyBlock/counterBlockInc.js
+        type: blockly
+        files:
+        - ../$common/visual.js
+        - visual.js
+        - ../$common/animations.js
+        name: ''
+        workspace: <xml></xml>
+        toolbox: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml">
+              <variables></variables>
+              <block type="counter_inc">
+                <value name="NAME">
+                  <shadow type="math_number">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </xml>
+        header: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
