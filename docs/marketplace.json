@@ -71,5 +71,23 @@
         "description": {
             "fr": "TODO"
         }
+    },
+    {
+        "id": "blockly",
+        "link": "https://github.com/UCL-INGI/Blockly_Section_Exercices",
+        "languages": "French",
+        "license": "GPL 3",
+        "maintainers": "UCLouvain - INGI",
+        "authors": "Ludovic Taffin",
+        "default_language": "fr",
+        "name": {
+            "fr": "Cours Blockly"
+        },
+        "short_desc": {
+            "fr": "Ceci est un cours Blockly bas\u00e9 sur le syst\u00e8me de section d'INGInious."
+        },
+        "description": {
+            "fr": "Ceci est un cours Blockly bas\u00e9 sur le syst\u00e8me de section d'INGInious. Il y a des exercices dit \"maze\" et \"artistes\""
+        }
     }
 ]
