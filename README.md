@@ -25,3 +25,12 @@ The links to the original github repository and the INGInious course are given, 
 | Maintainer | UCLouvain - INGI
 | Authors | Loan Sens
 
+| Name | [Blockly] Exercices OpenWeek     |
+| :---- | ------------------------------------- |
+| Github link | https://github.com/OpenWeek/openweek-blockly |
+| INGInious course link | https://inginious.org/course/blockly-openweek |
+| Language | French |
+| Description | TODO |
+| License | GPL 3.0 |
+| Maintainer | UCLouvain - INGI
+| Authors | TODO
