@@ -15,7 +15,7 @@
             "en": "Introduction to programming concepts through blockly and the PRIMM methodology"
         },
         "description": {
-            "fr": "Ce cours introduit une s\u00e9rie de concepts informatiques au travers d'une petite enqu\u00eate scientifique. Les outils utilis\u00e9s sont : Blockly et la m\u00e9thodologie PRIMM."
+            "fr": "Ce cours introduit une s\u00e9rie de concepts informatiques au travers d'une petite enqu\u00eate scientifique. Les outils utilis\u00e9s sont : Blockly et la m\u00e9thodologie PRIMM. Le cours est disponible ici : https://inginious.org/course/Memoire_Debognie_blockly"
         }
     },
     {
@@ -33,7 +33,7 @@
             "fr": "M\u00e9moire didactique de l'informatique - algorithme en cuisinant"
         },
         "description": {
-            "fr": "T\u00e2ches INGInious - Blockly d\u00e9velopp\u00e9es dans le cadre d'un cours \u00e9labor\u00e9 pour un m\u00e9moire sur la didactique de l'informatique."
+            "fr": "T\u00e2ches INGInious - Blockly d\u00e9velopp\u00e9es dans le cadre d'un cours \u00e9labor\u00e9 pour un m\u00e9moire sur la didactique de l'informatique. Le cours est disponible ici : https://inginious.org/course/primaire"
         }
     },
     {
@@ -51,7 +51,7 @@
             "fr": "Pr\u00e9sentation du concept d'intelligence artificielle des \"r\u00e9seaux neuronaux\"."
         },
         "description": {
-            "fr": "Pr\u00e9sentation du concept d'intelligence artificielle des \"r\u00e9seaux neuronaux\". Nous verrons \u00e0 travers des activit\u00e9s Blockly ce dont il s'agit et comment l'utiliser pour reconnaitre des formes particuli\u00e8res tel que des lignes ou des chiffres."
+            "fr": "Pr\u00e9sentation du concept d'intelligence artificielle des \"r\u00e9seaux neuronaux\". Nous verrons \u00e0 travers des activit\u00e9s Blockly ce dont il s'agit et comment l'utiliser pour reconnaitre des formes particuli\u00e8res tel que des lignes ou des chiffres. Le cours est disponible ici : https://inginious.org/course/reseaux-neurones"
         }
     },
     {
@@ -66,10 +66,10 @@
             "fr": "[Blockly] Exercices OpenWeek"
         },
         "short_desc": {
-            "fr": "TODO"
+            "fr": "Exemples tâches Blockly"
         },
         "description": {
-            "fr": "TODO"
+            "fr": "Ces exemples de tâches ont été créées par un groupe d'étudiant durant l'open week. Elles sont disponibles ici : https://inginious.org/course/blockly-openweek"
         }
     },
     {
@@ -87,7 +87,7 @@
             "fr": "Ceci est un cours Blockly bas\u00e9 sur le syst\u00e8me de section d'INGInious."
         },
         "description": {
-            "fr": "Ceci est un cours Blockly bas\u00e9 sur le syst\u00e8me de section d'INGInious. Il y a des exercices dit \"maze\" et \"artistes\""
+            "fr": "Ceci est un cours Blockly bas\u00e9 sur le syst\u00e8me de section d'INGInious. Il y a des exercices dit \"maze\" et \"artistes\". Le cours est disponible ici : https://github.com/UCL-INGI/Blockly_Section_Exercices"
         }
     }
 ]
