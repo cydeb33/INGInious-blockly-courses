@@ -39,3 +39,12 @@ The link to the original repository is given as well as some informations on the
 | License | GPL 3 |
 | Maintainer | UCLouvain - INGI |
 | Authors | Ilias Boutchichi, Guillaume Bellon, Sophie Schorochoff, Naitali Brandon, Colin Evrard, François Duchêne, Damien Raquet, Olivier Martin, Robin Descamps, François Michel |
+
+| Name | Cours Blockly |
+| :---- | ------------------------------------- |
+| Link | https://github.com/UCL-INGI/Blockly_Section_Exercices |
+| Language | French |
+| Description | Ceci est un cours Blockly bas� sur le syst�me de section d'INGInious. |
+| License | GPL 3 |
+| Maintainer | UCLouvain - INGI |
+| Authors | Ludovic Taffin |
