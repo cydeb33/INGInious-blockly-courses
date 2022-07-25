@@ -1,1 +1,17 @@
-
+accessible: true
+name: Introduction à l’intelligence artificielle - Réseau neuronal
+description: ''
+admins:
+- Loan
+tutors: []
+groups_student_choice: false
+use_classrooms: true
+allow_unregister: true
+allow_preview: true
+registration: true
+registration_password: null
+registration_ac: null
+registration_ac_list: []
+is_lti: false
+lti_keys: {}
+lti_send_back_grade: false

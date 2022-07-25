@@ -1,0 +1,186 @@
+accessible: true
+author: Loan
+categories: []
+context: |-
+    Bienvenue dans cette première tache Inginious destinée à l'implémentation d'un réseau de neurones.
+
+    --------
+    Blockly
+    --------
+
+    | Tu trouvera çi-bas le code *Blockly* permettant de correctement configurer le réseau de neurone.
+    | Dans cette première partie le code est fonctionnel et complet.
+    |
+    | Chacune des 3 étapes de la classification d'un réseau neuronal consiste en 1 bloc:
+    |  1. Calculer la valeur des neurones de la couche d'entrée à partir d'une entrée ``X``
+    | |block1|
+    |  2. Calculer la valeur des neurones des autres couches une par une
+    | |block2|
+    |  3. Tirer une conclusion de la couche de sortie
+    | |block3|
+    |
+    | Dans les parties qui vont suivre je vais retirer ces blocs et tu devra implémenter leur logique toi même. Pour cela des nouveaux blocs te seront à chaque fois introduit pour accomplir ton objectif.
+    |
+    | **Objectif**
+    | Le code est déja fonctionel.
+    | Dessine dans la grille à gauche pour voir comment le code et le réseau réagissent aux modifications.
+
+    .. |block1| image:: $common/img/blocks/handleInput.svg
+    .. |block2| image:: $common/img/blocks/handleLayers.svg
+    .. |block3| image:: $common/img/blocks/conclude.svg
+environment: default
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: '[BLOCKLY] Introduction du code Blockly'
+network_grading: false
+order: 3
+problems:
+    tuto1:
+        name: ''
+        options:
+            grid:
+                spacing: 20
+                snap: true
+                colour: '#ccc'
+                length: 3
+            speed: '60'
+            zoom:
+                minScale: 0.3
+                startScale: 1.0
+                controls: true
+                scaleSpeed: 1.2
+                maxScale: 3.0
+                wheel: false
+            scrollbars: true
+            visual:
+                position: left
+            toolboxPosition: start
+            oneBasedIndex: true
+            css: true
+            media: /plugins/blockly/static/blockly/media/
+            maxBlocks: Infinity
+        blocks_files:
+        - ../$common/blocklyBlock/blocks.js
+        - ../$common/blocklyBlock/blocksStubs.js
+        type: blockly
+        files:
+        - ../$common/raphael.min.js
+        - ../$common/simpleNetworkVisual.js
+        - ../$common/defaultInit.js
+        header: ''
+        workspace: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none">
+              <variables>
+                <variable type="" id="5r;uFq#S(ATV!I;_OHb:">image</variable>
+                <variable type="" id="#loSxYMpW/.zVKV`r}d^">resultat</variable>
+                <variable type="" id="DRiV+!WQR=}%0e}t.O[X">resultat classification</variable>
+              </variables>
+              <block type="procedures_defreturn" id="seJU@)_oop;:n0P[7KN4" x="38" y="13">
+                <mutation>
+                  <arg name="image" varid="5r;uFq#S(ATV!I;_OHb:"></arg>
+                </mutation>
+                <field name="NAME">classifier</field>
+                <comment pinned="false" h="80" w="160">Describe this function...</comment>
+                <statement name="STACK">
+                  <block type="nn_handle_input" id="J?mNY;s3Oydpe$TN_x%8">
+                    <value name="picture">
+                      <block type="variables_get" id="n0ATYb6Ze.TFl)jtModK">
+                        <field name="VAR" id="5r;uFq#S(ATV!I;_OHb:" variabletype="">image</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="nn_handle_layer" id="O#9z/lQ._j{PuVK/ic/o">
+                        <value name="layer_i">
+                          <block type="math_number" id="-jxVfCr}%C,alArslE#5">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="nn_handle_layer" id="w?`Ta2/S%^]Z@d0H8e@K">
+                            <value name="layer_i">
+                              <block type="math_number" id="=PP2p^*P=;Zfz*}H$.v?">
+                                <field name="NUM">3</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="G54l`$wC=fuQ.WyiZ@vY">
+                                <field name="VAR" id="#loSxYMpW/.zVKV`r}d^" variabletype="">resultat</field>
+                                <value name="VALUE">
+                                  <block type="nn_conclusion" id="~u7Ui:`teaX(/-ke+_{1"></block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <value name="RETURN">
+                  <block type="variables_get" id="cUCnb#][xB@q|19%o{S9">
+                    <field name="VAR" id="#loSxYMpW/.zVKV`r}d^" variabletype="">resultat</field>
+                  </block>
+                </value>
+              </block>
+              <block type="main" id="jmWh+]iUp:3TMBfC0eb`" x="38" y="238">
+                <next>
+                  <block type="variables_set" id="2#rO6vQnrqhr.Jx6bhCf">
+                    <field name="VAR" id="DRiV+!WQR=}%0e}t.O[X" variabletype="">resultat classification</field>
+                    <value name="VALUE">
+                      <block type="procedures_callreturn" id=")/~$8Z3t},M(UPkXnyAl">
+                        <mutation name="classifier">
+                          <arg name="image"></arg>
+                        </mutation>
+                        <value name="ARG0">
+                          <block type="nnimgcustom" id="``WP!@ZSA-N;t]#%[AbU"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="custom_print" id="h83zPIjM1Fr8H8FE-#KE">
+                        <value name="value">
+                          <block type="variables_get" id="-G$ecKXzuE*jagPmolin">
+                            <field name="VAR" id="DRiV+!WQR=}%0e}t.O[X" variabletype="">resultat classification</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </xml>
+        toolbox: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+              <category name="NN" colour="#a5935b">
+                <block type="nn_handle_input"></block>
+                <block type="nn_handle_layer"></block>
+                <block type="nn_conclusion"></block>
+              </category>
+              <category name="NN Image" colour="#a55b93">
+                <block type="nnimgcustom"></block>
+              </category>
+              <category name="NN Debug" colour="#80a55b">
+                <block type="main"></block>
+                <block type="custom_print"></block>
+              </category>
+              <sep></sep>
+              <category name="Math" colour="#5C68A6">
+                <block type="math_number">
+                  <field name="NUM">0</field>
+                </block>
+              </category>
+              <sep></sep>
+              <category name="Variables" colour="#A65C81" custom="VARIABLE"></category>
+              <category name="Functions" colour="#9A5CA6" custom="PROCEDURE"></category>
+            </xml>
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

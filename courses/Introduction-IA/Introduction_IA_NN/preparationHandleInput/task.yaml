@@ -1,0 +1,127 @@
+accessible: true
+author: Loan
+categories: []
+context: |
+    | Afin de préparer la valeur des neurones de la couche d'entrée avec blockly, nous allons utiliser le bloc ``donner au neuronne d'entrée n°X la valeur Y``.
+
+    .. image:: $common/img/blocks/setNeuronValue.svg
+
+    | Dans notre cas ``X`` est n'importe quel nombre entier entre 1 et 9 et ``Y`` vaut soit 0 soit 1.
+    |
+    | **Objectif**
+    | Donne aux neurones d'entrées suivants les valeurs suivantes:
+
+     - neurone 2, valeur 0
+     - neurone 4, valeur 1
+     - neurone 7, valeur 1
+environment: default
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: '[BLOCKLY] Préparation gestion de la couche d''entrée'
+network_grading: false
+order: 5
+problems:
+    blocklyCode:
+        options:
+            zoom:
+                maxScale: 3.0
+                controls: true
+                scaleSpeed: 1.2
+                minScale: 0.3
+                startScale: 1.0
+                wheel: false
+            visual:
+                position: left
+            speed: '60'
+            media: /plugins/blockly/static/blockly/media/
+            maxBlocks: '10'
+            grid:
+                length: 3
+                spacing: 20
+                colour: '#ccc'
+                snap: true
+            css: true
+            scrollbars: true
+            toolboxPosition: start
+            oneBasedIndex: true
+        files:
+        - ../$common/raphael.min.js
+        - ../$common/simpleNetworkVisual.js
+        - init.js
+        blocks_files:
+        - ../$common/blocklyBlock/blocks.js
+        - ../$common/blocklyBlock/blocksStubs.js
+        header: ''
+        name: ''
+        toolbox: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+              <category name="NN Input">
+                <block type="nn_input_neuron_value">
+                  <value name="neuron_i">
+                    <shadow type="math_number">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="neuron_value">
+                    <shadow type="math_number">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                </block>
+              </category>
+              <category name="NN Debug">
+                <block type="main"></block>
+              </category>
+              <sep></sep>
+              <category name="Math" colour="#5C68A6">
+                <block type="math_number">
+                  <field name="NUM">0</field>
+                </block>
+              </category>
+            </xml>
+        workspace: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none">
+              <variables></variables>
+              <block type="main" id="?e8d}nNm24_w]LTo~~R2" x="38" y="13">
+                <next>
+                  <block type="nn_input_neuron_value" id="ktk2(]_4_PZ+Xg)ui)?K">
+                    <value name="neuron_i">
+                      <shadow type="math_number" id="*H}k:/g9tH_p@*V6`m^o">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="neuron_value">
+                      <shadow type="math_number" id="6XPnDdzQB!]#,((d93AE">
+                        <field name="NUM">12</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="nn_input_neuron_value" id="yng*h.VLjv@m-_48$Rw;">
+                        <value name="neuron_i">
+                          <shadow type="math_number" id="BeVbRt67~GSMcxw_6+??">
+                            <field name="NUM">3</field>
+                          </shadow>
+                        </value>
+                        <value name="neuron_value">
+                          <shadow type="math_number" id="|m_Fvp*Sb*xJ_oaHjWU*">
+                            <field name="NUM">46</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </xml>
+        type: blockly
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

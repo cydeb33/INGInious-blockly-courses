@@ -1,0 +1,139 @@
+accessible: true
+author: Loan
+categories: []
+context: |+
+    --------------
+    Réseau utilisé
+    --------------
+
+    | Tout au long des exercices qui vont suivre, on va utiliser le même réseau neuronal.
+    | Ce réseau a été spécialement entrainé pour reconnaitre une ligne verticale d'une ligne horizontale dans une image en noir et blanc de 3x3 pixels.
+    | Celui ci est composé de 3 couches au total.
+    | - La couche d'entrée comporte 9 neurones, correspondant au 9 pixels de l'image/grille donné en entrées
+    | - La couche cachée (il n'y en a qu'une seule dans ce réseau), comporte 3 neurones
+    | - La couche de sortie comporte 2 neurones, le premier détermine la conclusion **vertical** et le second **horizontal**
+
+    .. figure:: introNetwork/schema.svg
+       :width: 1000 px
+       :align: center
+
+       Les couleurs dans la grille de gauche sont juste pour que tu comprennes mieux la composition de la première couche. Chaque pixel sera toujours soit blanc, soit noir.
+
+    --------------
+    Entrainement
+    --------------
+    | Ce réseau à déjà été entrainé au préalable par *apprentissage supervisé*, la valeur des matrices des poids sont les suivantes :
+
+    $$
+    \\text{Entrée - Cachée}
+    \\begin{pmatrix}6 & 6 & 0 \\\\ -4 & 8 & -1 \\\\ 6 & 7 & 9 \\\\ 8 & -4 & -3 \\\\ -5 & -5 & -1 \\\\ 8 & -4 & 7 \\\\ 6 & 4 & 1 \\\\ -4 & 9 & -1 \\\\ 7 & 7 & 8 \\end{pmatrix}
+    \\quad
+    \\text{Cachée - Sortie}
+    \\begin{pmatrix}-5 & 5 \\\\ 7 & -7 \\\\ -4 & 4 \\end{pmatrix}
+    $$
+
+    Pour obtenir ses valeurs j'ai entrainé le réseau à l'aide de 21 grilles/images. Certaines de ces grilles apparaissent plusieurs fois, c'est pour insister auprès du réseau pour qu'il puisse les reconnaitre correctement.
+    Après l'entrainement, le réseau prédit mal seulement 3 grilles/images parmi les 21 initialement fournies.
+    Les valeurs indiqué plus haut ont également étaient multipliés par 2 arrondies afin que tu es nombre plus facile à manipuler.
+
+    Note qu'une ligne verticale étant l'opposé d'une ligne horizontale, les grilles utilisées sont des symmétries centrales l'une de l'autre.
+    Les 21 grilles utiliséees pour chaque lignes sont les suivantes :
+
+    .. raw:: html
+
+        <table class="table table-hover table-bordered">
+          <tbody>
+            <tr>
+              <th scope="row">Nombre</th>
+              <td style="text-align: center;">5</td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">3</td>
+              <td style="text-align: center;">3</td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">1</td>
+            </tr>
+            <tr>
+              <th scope="row">Verticale</th>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV1.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV2.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV3.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV4.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV5.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV6.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV7.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV8.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV9.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV10.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV11.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV12.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/vert/gridV13.svg"></img></td>
+            </tr>
+            <tr>
+              <th scope="row">Horizontale</th>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV1.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV2.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV3.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV4.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV5.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV6.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV7.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV8.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV9.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV10.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV11.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV12.svg"></img></td>
+              <td><img class="img-fluid" src="introNetwork/grids/hor/gridV13.svg"></img></td>
+            </tr>
+          </tbody>
+        </table>
+
+environment: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: Introduction du réseau
+network_grading: false
+order: 2
+problems:
+    questions:
+        choices:
+        -   feedback: Un réseau neuronal peut avoir autant de couche cachée qu'il
+                le souhaite avec le nombre de neurones de son choix. Ici j'ai choisi
+                que 3 neurones pour te simplifier les calculs
+            text: Un réseau neuronal ne peut avoir qu'une seule couche cachée
+        -   valid: true
+            text: Les valeurs dans les matrices des poids sont le résultat de l'entrainement
+                de notre réseau à partir d'images dont on connaissait à l'avance leur
+                résultat
+        -   text: Les valeurs des neurones de la couche d'entrée sont déterminés par
+                l'entrée qu'on donne au réseau
+            valid: true
+        -   valid: true
+            text: La valeur des neurones dans la couche de sortie sont les probabilité
+                pour chaque conclusion
+        -   text: Les valeurs de la couche cachée premettent de savoir directement
+                si la ligne est horizontale ou verticale
+            feedback: Pas vraiment, cette couche permet de faire l'intermédiaire entre
+                celle d'entrée et celle de sortie.
+        multiple: true
+        type: multiple_choice
+        name: ''
+        header: Coche la/les affimation(s) vraies
+        limit: 0
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
